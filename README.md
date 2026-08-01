@@ -15,15 +15,29 @@ Implemented features:
 - Git version control
 
 ## Project structure
-AutomationSupervisor/
 
-├── config/
-│ ├── init.py
-│ └── settings.py
-│
-├── main.py
-│
-└── README.md
+```text
+
+AutomationSupervisor/
+|
+|__.venv
+|__config/
+|    |__ __init__.py
+|    |__settings.py
+|__services
+|    |__ __init__.py
+|    |__startup.py
+|__.gitignore
+|__main.py
+|__README.md
+
+```
+
+### Description
+
+- main.py : Entry point of the application
+- config/settings.py : Centralized application configuration
+- services/startup.py : Startup-related functions
 
 ## Technologies
 
@@ -42,5 +56,7 @@ Current parameters include:
 
 ## How to run
 Create and activate the virtual environment: python -m venv .venv
+
 Install dependencies: pip install -r requirements.txt
+
 Run the application: python main.py
