@@ -1,5 +1,8 @@
+import logging
+
 from config.settings import APPLICATION_NAME, PLC_IP, PLC_PORT
 from services.startup import display_startup_message
+logging.info("Application is starting")
 
 display_startup_message()
 

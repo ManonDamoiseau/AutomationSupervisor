@@ -24,6 +24,8 @@ AutomationSupervisor/
 |__config/
 |    |__ __init__.py
 |    |__settings.py
+|__docs
+|    |__adr
 |__services
 |    |__ __init__.py
 |    |__startup.py
@@ -38,6 +40,12 @@ AutomationSupervisor/
 - main.py : Entry point of the application
 - config/settings.py : Centralized application configuration
 - services/startup.py : Startup-related functions
+
+## Documentation
+Architecture decisions are documented using ADRs.
+
+Available decisions:
+- ADR 001 - Separate logging configuration from application settings
 
 ## Technologies
 
