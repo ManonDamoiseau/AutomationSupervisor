@@ -1,8 +1,8 @@
-def initialize_startup():
-     """
-    Entry point for application initialization.
+import logging
 
-    Future startup tasks such as service initialization
-    and connection checks will be added here.
-    """
-    pass
+logger = logging.getLogger(__name__)
+
+def initialize_startup():
+     logger.info("Startup initialization started")
+
+    
