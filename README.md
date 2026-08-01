@@ -30,8 +30,10 @@ AutomationSupervisor/
 |    |__ __init__.py
 |    |__startup.py
 |__.gitignore
+|__logging_config.py
 |__main.py
 |__README.md
+|__requirements.txt
 
 ```
 
