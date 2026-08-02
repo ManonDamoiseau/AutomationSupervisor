@@ -10,9 +10,11 @@ The project is currently under development.
 
 Implemented features:
 
-- Python project structure
 - Configuration management
-- Git version control
+- Startup service
+- Centralized logging
+- Unit testing infrastructure (pytest)
+- Domain model introduced (Equipment)
 
 ## Project structure
 
@@ -26,9 +28,15 @@ AutomationSupervisor/
 |    |__settings.py
 |__docs
 |    |__adr
+|__domain
+|    |__ __init__.py
+|    |__equipment.py
 |__services
 |    |__ __init__.py
 |    |__startup.py
+|__tests
+|    |__ __init__.py
+|    |__test_startup.py
 |__.gitignore
 |__logging_config.py
 |__main.py
@@ -41,7 +49,10 @@ AutomationSupervisor/
 
 - main.py : Entry point of the application
 - config/settings.py : Centralized application configuration
-- services/startup.py : Startup-related functions
+- services/startup.py : Startup-related initialization
+- tests/ : Unit tests
+- logging_config.py : Centralized logging configuration
+- requirements.txt : Python project dependencies
 
 ## Documentation
 Architecture decisions are documented using ADRs.
@@ -52,6 +63,7 @@ Available decisions:
 ## Technologies
 
 - Python
+- pytest
 - OPC UA (planned)
 - Git / GitHub
 
@@ -65,8 +77,14 @@ Current parameters include:
 - OPC UA port
 
 ## How to run
-Create and activate the virtual environment: python -m venv .venv
+Create and activate the virtual environment : python -m venv .venv
 
-Install dependencies: pip install -r requirements.txt
+Install dependencies : pip install -r requirements.txt
 
-Run the application: python main.py
+Run the application : python main.py
+
+## Testing
+
+Run all unit tests : pytest
+
+Run a specific test file : pytest tests/test_startup.py
