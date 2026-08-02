@@ -13,8 +13,9 @@ Implemented features:
 - Configuration management
 - Startup service
 - Centralized logging
-- Unit testing infrastructure (pytest)
-- Domain model introduced (Equipment)
+- Unit testing (pytest)
+- Domain model (Equipment)
+- Equipment service introduced
 
 ## Project structure
 
@@ -33,10 +34,12 @@ AutomationSupervisor/
 |    |__equipment.py
 |__services
 |    |__ __init__.py
+|    |__equipment_service.py
 |    |__startup.py
 |__tests
 |    |__ __init__.py
 |    |__test_startup.py
+|    |__test_equipment_service.py
 |__.gitignore
 |__logging_config.py
 |__main.py
@@ -49,10 +52,13 @@ AutomationSupervisor/
 
 - main.py : Entry point of the application
 - config/settings.py : Centralized application configuration
+- domain/equipment.py : Domain entity representing industrial equipment
+- services/equipment_service.py : Equipment-related business operations
 - services/startup.py : Startup-related initialization
-- tests/ : Unit tests
+- tests/test_equipment_service.py: Unit tests for equipment services
 - logging_config.py : Centralized logging configuration
 - requirements.txt : Python project dependencies
+
 
 ## Documentation
 Architecture decisions are documented using ADRs.
