@@ -15,7 +15,10 @@ Implemented features:
 - Centralized logging
 - Unit testing (pytest)
 - Domain model (Equipment)
-- Equipment service introduced
+- Equipment service
+- External equipment configuration introduced
+- Configuration service created
+- YAML configuration supported
 
 ## Project structure
 
@@ -26,6 +29,7 @@ AutomationSupervisor/
 |__.venv
 |__config/
 |    |__ __init__.py
+|    |__equipment.yaml
 |    |__settings.py
 |__docs
 |    |__adr
@@ -34,6 +38,7 @@ AutomationSupervisor/
 |    |__equipment.py
 |__services
 |    |__ __init__.py
+|    |__configuration_service.py
 |    |__equipment_service.py
 |    |__startup.py
 |__tests

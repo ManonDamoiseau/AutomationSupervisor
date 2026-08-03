@@ -1,0 +1,4 @@
+equipment:
+  name: Cyclotron
+  identifier: CYC-001
+  opcua_node_id: ns=2;s=Cyclotron.Status
