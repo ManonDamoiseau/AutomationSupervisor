@@ -8,7 +8,7 @@ def load_equipment_configuration() -> dict:
     Load the equipment configuration from the YAML file.
 
     Returns:
-        dict: Equipment configuration as a Python dictionary.
+        dict: Complete application configuration loaded from YAML.
     """
 
     config_file = Path("config") / "equipment.yaml"

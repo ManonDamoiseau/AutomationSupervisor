@@ -1,4 +1,16 @@
 equipment:
-  name: Cyclotron
-  identifier: CYC-001
-  opcua_node_id: ns=2;s=Cyclotron.Status
+  - name: Cyclotron
+    identifier: CYC-001
+    opcua_node_id: ns=2;s=Cyclotron.Status
+
+  - name: Beam Transport System
+    identifier: BTS-001
+    opcua_node_id: ns=2;s=BeamTransport.Status
+
+  - name: Gantry
+    identifier: GNT-001
+    opcua_node_id: ns=2;s=Gantry.Status
+
+  - name: Patient Positioning System
+    identifier: PPS-001
+    opcua_node_id: ns=2;s=PatientPositioning.Status
